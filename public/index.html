@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <title>Bookmark App</title>
+        <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class = "container-fluid mx-auto">
+            <h1>
+                Bookmarks App
+            </h1>
+        </div>
+        <form class = "bookmark-form">
+            <label>
+                Click the buttton to get the full list of Bookmarks
+            </label>
+            <button id = "submitbtn" type = "submit" class = "btn1"> 
+                Get bookmarks
+            </button>
+        </form>
+        <form class = "addBookmark">
+            <label>
+                Add Bookmark
+            </label>
+            <div class = "form">
+                <label for = "bkTitle" class = "bookmTitle">
+                    Title:
+                </label>
+                <input type = "text" id = "bookmarkTitle" />
+            </div>
+            <div class = "form">
+                <label for = "bDescription" class = "bookmTitle">
+                    Description:
+                </label>
+                <input type = "text" id = "description" />
+            </div>
+            <div class = "form">
+                <label for = "bookmarkUrl" class = "bookmTitle">
+                    URL:
+                </label>
+                <input type = "text" id = "url" />
+            </div>
+            <div class = "form">
+            <label for = "bRating" class = "bookmTitle">
+                Rating:
+            </label>
+            <input type = "number" id = "rating" />
+            </div>
+            <div class = "addB">
+                <button type = "submit" class = "btn1">
+                    Add Bookmark
+                </button>
+            </div>
+        </form>
+
+        <form class = "searchBookmark">
+            <label  class = "bookmTitle">
+                Search bookmarks by title:
+            </label>
+            <input type = "text" id = "searchBookmark">
+            <button type = "submit" class = "btn1">
+                Search
+            </button>
+        </form>
+
+        <section class = "results">
+
+        </section>
+        <script src = "./js/index.js"></script>
+    </body>
+</html>
